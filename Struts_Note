@@ -1,0 +1,19 @@
+Struts2 的Action的开发的几种方式
+  方式1（如果使用Struts数据校验功能必须继承该方法）
+    继承ActionSupport
+  方式2
+    实现Action接口，同时实现一个接口方法execute();
+  方式3
+    不继承不实现任何类
+ 
+ 二、Struts的通配符
+  在struts可以子啊配置信息中可以使用*与{1}到达减少代码重复来两的问题/
+
+三、路径匹配原则
+四、Struts常量
+   Struts中默认的访问后缀
+      1、Struts1中默认是.do
+      2、A、Struts中默认是.action
+   
+   如何修改默认访问后缀
+      1、默认后缀在什么地方定义的。

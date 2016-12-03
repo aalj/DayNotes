@@ -1,0 +1,24 @@
+1、通过Struts2实现文件上传
+  1.文件上传过程中对于form表单需要添加上传文件的属性  enctype="multipart/form-data"
+  2.在使用表单提交的时候文件的表单name在action中分别对应
+    1.'name'FileName-------文件名称
+    2. 'name' ------表示文件对象
+    3. 'nameCOntentType'-------对应文件类型
+  3.在配置Struts的时候对于acton不能使用fileUpload作为action的访问名
+  4.设置上传文件的大小
+    <interceptor-ref name="fileUpload">
+      <param name="savePath">/data</param>  
+      <param name="maximumSize">52428800</param> 
+    </interceptor-ref>
+  5.控制上传文件类型
+    <!-- 限制运行上传的文件的类型 -->
+			<interceptor-ref name="defaultStack">
+				<!-- 限制运行的文件的扩展名 -->
+				<param name="fileUpload.allowedExtensions">txt,jpg,jar</param>
+				<!-- 限制运行的类型   【与上面同时使用，取交集】
+				<param name="fileUpload.allowedTypes">text/plain</param>
+				-->
+			</interceptor-ref>
+
+
+2、通过Struts2实现文件下载
