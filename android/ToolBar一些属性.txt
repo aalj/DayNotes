@@ -1,0 +1,21 @@
+首先看一下Toolbar 有哪些比较常用和重要的方法
+XML中的常用属性(注意开头是自定义命名空间 xmlns:toolbar=”http://schemas.android.com/apk/res-auto“, 而不是 android,如果使用android:navigationIcon这种事无效的，必须使用 toolbar:navigationIcon)：
+
+toolbar:navigationIcon 设置navigation button
+toolbar:logo 设置logo 图标
+toolbar:title 设置标题
+toolbar:titleTextColor 设置标题文字颜色
+toolbar:subtitle 设置副标题
+toolbar:subtitleTextColor 设置副标题文字颜色
+toolbar:popupTheme  Reference to a theme that should be used to inflate popups shown by widgets in the toolbar.
+toolbar:titleTextAppearance 设置title text 相关属性，如：字体,颜色，大小等等
+toolbar:subtitleTextAppearance 设置subtitle text 相关属性，如：字体,颜色，大小等等
+toolbar:logoDescription logo 描述
+
+android:background Toolbar 背景
+
+android:theme 主题
+
+以上就是Toolbar比较常用的  XML 中的属性，这些属性也可以在代码中设置，代码如下：
+
+图片 1  图片 2 图片三
