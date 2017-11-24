@@ -1,0 +1,1 @@
+条件查询  时间条件的写法    convert(varchar(10),update_time,120)='2017-11-22'
