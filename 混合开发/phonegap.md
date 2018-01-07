@@ -1,6 +1,6 @@
 ## phonegap前期准备
 
-> cordova(phonegap) 两者区别：
+> cordova(phonegap) 两者区别： 
 
 1. node.js安装
    1. 下载相应的安装跑进行安装即可
@@ -87,42 +87,42 @@
 
 10. 在activity页面中同时存在html页面和原生Android控件
 
-   1. 在界面不居中需要使用SystemWebView的控件，该控件继承WebView
+  1. 在界面不居中需要使用SystemWebView的控件，该控件继承WebView
 
-   2. Activity需要继承CordovaActivity类 
+  2. Activity需要继承CordovaActivity类 
 
-      ```java
-      public abstract class BaseActivityWebView extends CordovaActivity{
-        
-      }
-      ```
+     ```java
+     public abstract class BaseActivityWebView extends CordovaActivity{
+       
+     }
+     ```
 
-      ​
+     ​
 
-   3. 在Activity中findViewById得到该控件的实例，然后需要重写`createView` 和 `makeWebView()` 
+  3. 在Activity中findViewById得到该控件的实例，然后需要重写`createView` 和 `makeWebView()` 
 
-      ```java
-      	@Override
-          protected void createViews() {
-            	//获取SystemWebView的焦点
-              appView.getView().requestFocusFromTouch();
-          }
+     ```java
+     	@Override
+         protected void createViews() {
+           	//获取SystemWebView的焦点
+             appView.getView().requestFocusFromTouch();
+         }
 
-          @Override
-          protected CordovaWebView makeWebView() {
-              return new CordovaWebViewImpl(new SystemWebViewEngine((SystemWebView) webView));
-          }
-      ```
+         @Override
+         protected CordovaWebView makeWebView() {
+             return new CordovaWebViewImpl(new SystemWebViewEngine((SystemWebView) webView));
+         }
+     ```
 
-   4. 加载html页面
+  4. 加载html页面
 
-      ```java
-      //针对CordovaActivity中WebView加载页面使用一下方法，才能和Cordova.js进行交互
-      loadUrl("http://....");
-      loadUrl("file://....");
-      ```
+     ```java
+     //针对CordovaActivity中WebView加载页面使用一下方法，才能和Cordova.js进行交互
+     loadUrl("http://....");
+     loadUrl("file://....");
+     ```
 
-      ​
+     ​
 
 11. activity调用html中js方法
 

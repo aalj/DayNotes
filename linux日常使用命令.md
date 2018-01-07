@@ -1,0 +1,1 @@
+1. 更新时间   `sudo ntpdate time-a.nist.gov`

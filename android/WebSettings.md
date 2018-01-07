@@ -1,0 +1,2 @@
+# WebSettings的理解
+> WebSettings的主要作用是在WebView的时候设置相关的属性已达到做好的html 加载效果

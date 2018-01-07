@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Development;
+Comment[zh_CN]=
+Comment=
+Exec=/home/owen/Software/eclipse/eclipse
+GenericName[zh_CN]=IDE
+GenericName=IDE
+Icon=/home/owen/Software/eclipse/icon.xpm
+MimeType=
+Name[zh_CN]=eclipse
+Name=eclipse
+Path=
+StartupNotify=true
+Terminal=false
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=owen
+
+

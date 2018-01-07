@@ -1,0 +1,6 @@
+focusable						在非触摸屏的情况下获取点击焦点
+focusableInTouchMode			触摸屏下获取焦点
+keyBackground					(针对键盘)设置键的图像。键的图像。 此图像需要是一个StateListDrawable，具有以下可能的状态：normal, pressed, checkable, checkable+pressed, checkable+checked, checkable+checked+pressed。
+keyTextColor					(针对键盘)设置键的标签的颜色
+shadowColor						文字阴影想过 一般设置成透明的颜色
+shadowRadius					文字阴影半径
