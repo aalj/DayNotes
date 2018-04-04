@@ -1,0 +1,12 @@
+关于线程池的创建 ThreadPoolExecutor
+创建需要的参数 	int corePoolSize, 					线程池的基本大小
+				int maximumPoolSize, 				线程池最大
+				long keepAliveTime,					线程活动保持时间
+				TimeUnit unit,						第三个参数使用的单位(纳秒、微秒、毫秒、秒、分、时、天)
+				BlockingQueue<Runnable> workQueue,	线程池中的任务队列
+				ThreadFactory threadFactory,		为线程池创建新的线程
+				RejectedExecutionHandler handler	饱和策略 存在四种策略
+				
+向线程池提交任务(两种方式)
+	1. execute 该方法没有返回值
+	2. submit  会返回一个 future;
