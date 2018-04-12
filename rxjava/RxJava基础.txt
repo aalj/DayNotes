@@ -1,0 +1,27 @@
+Rxjava 观察者模式 概念
+	1. Observable 被观察者
+	2. Obserer 观察者
+	3. subscribe 订阅
+	
+
+ObservableEmitter 发射器用来发送事件
+Disposable 切断事件管道的连接
+
+	
+注意 上游能够发送无限个onNext  下游也能接收接收无限个onNext
+当上游发送onComplete 事件继续发送 但是当下游接收到onComplete后将不会在接收新的事件.
+同理onError也是同样的流程
+
+
+
+二 线程调度器
+
+上游的线程定义不论设置几次都只会第一次设置生效(subscribeOn)
+下游执行线程设置几次生效几次(observeOn)
+
+三 变换操作符
+	1. map 主要作用是对上游发送的每一个事件应用一个函数,使得每一个事都按照制定的函数去变化.
+	2. FlatMap 将一个发送事件的上游Observable变换为多个发送事件的Observables,然后将他们发射的时间合并后放进一个单独的Observable中
+
+四 zip 操作
+	1 同过一个函数将多个Observable发送的事件结合在一起,然后发送这些组合到一起的事件,他按照严格的顺序应用这个函数,他只发射与发射数据项最少的那个Observable一样多的数据
