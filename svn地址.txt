@@ -1,5 +1,5 @@
-本地的地址
-https://192.168.13.248:8441/svn/arya
+鍒囨崲鍒板叕鍙哥殑svn鍦板潃
+https://192.168.1.10:8441/svn/arya
 
-外网可以连接的地址
-https://8k9kd3k63lf6wl83s.humanpool.com.cn:1000/svn/arya
+鍒囨崲鍒板缃戠殑鍦板潃
+https://222.92.65.234:8441/svn/arya/

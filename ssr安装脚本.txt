@@ -1,0 +1,27 @@
+说明：该脚本由雨落无声大佬制作，功能丰富且易用，并由loc大佬Kirito打包，这里分享下脚本。
+
+功能
+一键开启、关闭55R服务。
+添加、删除、修改用户端口和密码。
+自由限制用户端口流量使用。
+自动修改防火墙规则。
+自助修改加密方式、协议、混淆等参数。
+自动统计，方便查询每个用户端口的流量使用情况。
+自动安装Libsodium库以支持Chacha20等加密方式。
+安装
+系统要求：CentOS 6+、Debian 6+、Ubuntu 14.04 +。
+
+安装指令：
+
+yum install unzip wget #For Centos
+apt-get install unzip #For Debian和Ubuntu
+安装：
+
+wget -N --no-check-certificate https://www.moerats.com/usr/down/55r.zip && unzip 55r.zip && cd 55R* && bash install.sh
+安装完成后就可以进行相关操作。记得开启WEB面板后在浏览器输入http://ip:port进行相关查询。
+
+卸载：
+
+cd 55R* && bash uninstall.sh
+雨落大佬博客：https://www.zhujiboke.com，欢迎去参观。
+
