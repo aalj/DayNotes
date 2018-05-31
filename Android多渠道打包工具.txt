@@ -1,0 +1,8 @@
+批量打包工具
+1. github.com/GavinCT/AndroidMultiChannelBuildTool
+2. github.com/mcxiaoke/packer-ng-plugin
+3. github.com/Meituan-dianping/walle
+
+事件总线第三方
+1. cangwang  ModuleBus_Ex
+https://github.com/SpinyTech/ModularizationArchitecture.git
