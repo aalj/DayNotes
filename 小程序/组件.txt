@@ -1,0 +1,9 @@
+视图容器组件
+
+view 
+scroll-view
+swiper
+movable-view
+cover-view 盖在其他组件上面
+
+hover-class 按下的样式
