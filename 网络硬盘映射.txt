@@ -1,0 +1,1 @@
+sshfs -o nonempty wyx@192.168.1.10:/mnt/storage /mnt/storage
