@@ -1,0 +1,9 @@
+git clone https://github.com/flyzy2005/ss-fly
+yum install git 
+git clone https://github.com/flyzy2005/ss-fly
+ss-fly/ss-fly.sh -ssr
+vim /etc/shadowsocks.json 
+/etc/init.d/shadowsocks restart
+netstat -ntlp
+ss-fly/ss-fly.sh -bbr
+netstat -ntlp
